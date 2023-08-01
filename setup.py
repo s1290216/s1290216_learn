@@ -11,15 +11,15 @@ setuptools.setup(
     author = 's1290216',
     url = 'https://github.com/s1290216/s1290216_learn',
     packages = setuptools.find_packages(),
-    classifiers = {
+    classifiers = [
         'Development Status :: 4 - Beta',
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: GNU General Public License v3 (GPLv3)',
         'Operating System :: OS Independent',
-    },
+    ],
     license = 'GPLv3',
     long_description_content_type = 'text/markdown',
-    install_requires = {
+    install_requires = [
         'psutil',
         'pandas',
         'plotly',
@@ -30,6 +30,6 @@ setuptools.setup(
         'Pillow',
         'numpy',
         'pami',
-    },
+    ],
     python_requires = '>=3.5',
 )
