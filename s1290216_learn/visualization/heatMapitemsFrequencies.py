@@ -9,12 +9,12 @@ class heatMapItemsFrequencies:
             if ',' in k:
                 points = k.split(',')
                 for p in points:
-                    long, lati = p.replace('Point(', '').replace(')', '').split()
+                    long, lati = p.replace('Point(', '').replace(').1', '').replace(')', '').split()
                     latitude.append(float(lati))
                     longitude.append(float(long))
                     frequency.append(int(v))
             else:
-                long, lati = k.replace('Point(', '').replace(')', '').split()
+                long, lati = k.replace('Point(', '').replace(').1', '').replace(')', '').split()
                 latitude.append(float(lati))
                 longitude.append(float(long))
                 frequency.append(int(v))
@@ -22,7 +22,6 @@ class heatMapItemsFrequencies:
             lat = latitude,
             lon = longitude,
             z = frequency,
-            size = frequency,
             radius = 10,
             center = {'lat': 34.686567, 'lon': 135.52000},
             zoom = 4,
