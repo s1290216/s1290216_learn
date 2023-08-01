@@ -4,11 +4,11 @@ with open('README.md', 'r') as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name = s1290216_learn,
-    version = 1.0.0,
+    name = 's1290216_learn',
+    version = '1.0.0',
     description = 'This is homework',
     long_description = long_description,
-    author = s1290216,
+    author = 's1290216',
     url = 'https://github.com/s1290216/s1290216_learn',
     packages = setuptools.find_packages(),
     classifiers = {
