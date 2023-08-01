@@ -1,2 +1,0 @@
-pami
-plotly
