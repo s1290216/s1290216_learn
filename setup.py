@@ -5,7 +5,7 @@ with open('README.md', 'r') as fh:
 
 setuptools.setup(
     name = 's1290216_learn',
-    version = '1.0.0',
+    version = '1.0.1',
     description = 'This is homework',
     long_description = long_description,
     author = 's1290216',
@@ -20,15 +20,7 @@ setuptools.setup(
     license = 'GPLv3',
     long_description_content_type = 'text/markdown',
     install_requires = [
-        'psutil',
-        'pandas',
         'plotly',
-        'matplotlib',
-        'resource',
-        'validators',
-        'urllib3',
-        'Pillow',
-        'numpy',
         'pami',
     ],
     python_requires = '>=3.5',
